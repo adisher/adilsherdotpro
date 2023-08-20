@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #001a1a;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-family: Tt hoves pro, sans-serif;
+}
+
+.md\:space-x-50 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(50px * var(--tw-space-x-reverse));
+  margin-left: calc(50px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #001a1a;
+  /* border-radius: 4px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #001a1a;
+}
+
+/* Arrow signs */
+::-webkit-scrollbar-button {
+  display: block;
+  height: 20px;
+  width: 100%;
+  background-color: #001a1a;
+}
+
+/* Top arrow */
+::-webkit-scrollbar-button:decrement:before {
+  content: "▲";
+  font-size: 14px;
+}
+
+/* Bottom arrow */
+::-webkit-scrollbar-button:increment:before {
+  content: "▼";
+  font-size: 14px;
+}
